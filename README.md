@@ -1,6 +1,18 @@
-### My portfolio - Maksymilian Kaliszewski
+# My portfolio - Maksymilian Kaliszewski
 
 This repository's purpose is to create my very first portfolio website by using **HTML, CSS, JS** and different **libraries** like React to present myself.
 
-This website itself can be considered as an additional project since creating and working on it by my own is deeply conected with learning to do so.
+This website itself can be considered as an additional project since creating and working on it by my own is deeply conected with learning to do so.  
 This contains learning how to start a personal website and searching for tools that fit into my vision.
+
+---
+
+## Tech
+For this project, I used HTML, CSS and JavaScript as the main fundament and libraries like ... to accomplish a clean UI.  
+...  
+
+## Setpup
+...  
+
+---
+## Deploy Link
