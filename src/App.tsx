@@ -1,10 +1,10 @@
 import './App.css'
+import Home from "./pages/Home.tsx";
 
 function App() {
     return (
         <main>
-            <h1>My Portfolio</h1>
-            <p>Welcome 👋</p>
+            <Home />
         </main>
     )
 }
