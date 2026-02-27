@@ -1,4 +1,4 @@
-export default function Projects() {
+export default function Work() {
     return (
         <section>
             <h1>Projects</h1>
