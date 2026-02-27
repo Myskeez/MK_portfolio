@@ -3,12 +3,12 @@ import Navbar from "./Navbar"
 
 export default function Layout() {
     return (
-        <div style={{ maxWidth: 980, margin: "0 auto", padding: "0 16px" }}>
+        <div>
             <Navbar />
-            <main style={{ padding: "24px 0" }}>
+            <main className='main'>
                 <Outlet />
             </main>
-            <footer style={{ padding: "24px 0", borderTop: "1px solid #e5e5e5" }}>
+            <footer style={{ padding: "24px 0", borderTop: "1px solid var(--text-color)" }}>
                 <small>© {new Date().getFullYear()} My Portfolio</small>
             </footer>
         </div>

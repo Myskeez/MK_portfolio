@@ -1,0 +1,15 @@
+:root {
+    color-scheme: light;
+    --text-color: black;
+    --bg-color: linear-gradient(to top, #B0D4FF 0%, white 100%);
+    --bg-el: #D3D3D3;
+    --orange: #FFDBB0;
+}
+
+.dark {
+    color-scheme: dark;
+    --text-color: white;
+    --bg-color: linear-gradient(to top, #1E59FA 0%, black 100%);
+    --bg-el: #A9A9A9;
+    --orange: #FABF1E;
+}

@@ -1,27 +1,28 @@
 import { NavLink } from "react-router-dom"
 
-const linkStyle = ({ isActive }: { isActive: boolean }) => ({
-    textDecoration: "none",
-    fontWeight: isActive ? 700 : 400,
-})
-
 export default function Navbar() {
     return (
-        <header style={{ padding: "16px 0", borderBottom: "1px solid #e5e5e5" }}>
-            <nav style={{ display: "flex", gap: 16 }}>
-                <NavLink to="/" style={linkStyle} end>
+        <header className='navbarContainer'>
+            <div className='logo'>
+                LOGO
+            </div>
+
+            <nav className='navbar'>
+                <NavLink to="/" className={({ isActive }) => isActive ? "navLink active" : "navLink"} end>
                     Home
                 </NavLink>
-                <NavLink to="/work" style={linkStyle}>
+                <NavLink to="/work" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>
                     Work
                 </NavLink>
-                <NavLink to="/about" style={linkStyle}>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>
                     About
                 </NavLink>
-                <NavLink to="/contact" style={linkStyle}>
+                <NavLink to="/contact" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>
                     Contact
                 </NavLink>
             </nav>
+
+            <div className='nacIconPlaceholder'></div>
         </header>
     )
 }

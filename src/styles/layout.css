@@ -1,0 +1,56 @@
+.main {
+    padding: 2em 0;
+}
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    width: fit-content;
+    height: 1em;
+    justify-content: center;
+}
+
+.navLink {
+    position: relative;
+    font-size: .75em;
+    color: var(--text-color), .5;
+    padding: .75em 1.5em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.navLink:hover {
+    transform: scale(1.05);
+}
+
+.navLink.active {
+    background: var(--orange);
+    backdrop-filter: blur(12px);
+    box-shadow:
+            inset 0 1px 1px rgba(255,255,255,0.25),
+            0 4px 12px rgba(0,0,0,0.08);
+    font-weight: bold;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nacIconPlaceholder {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
