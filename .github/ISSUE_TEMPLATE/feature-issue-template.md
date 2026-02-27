@@ -7,10 +7,6 @@ assignees: Myskeez
 
 ---
 
-## Resolves
-
-This issue resolves <!-- for example #1 -->
+## Proposal
 
 ## Changes
-
-### Test
