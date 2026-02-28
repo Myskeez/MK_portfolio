@@ -18,6 +18,10 @@ body {
     color: var(--text-color);
 }
 
+p {
+    font-size: var(--text-font-size);
+}
+
 a {
     font-weight: 500;
     color: var(--text-color);
