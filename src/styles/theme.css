@@ -1,0 +1,25 @@
+:root {
+    --text-font-size: 1.2rem;
+
+    color-scheme: light;
+    --text-color: black;
+    --glass-bg: #ffffff99;
+    --glass-shadow: #00000035;
+    --glass-inset-shadow-corner: #ffffffb3;
+    --bg-color: linear-gradient(to top, var(--blue) 0%, white 100%);
+    --bg-el: #D3D3D3;
+    --blue: #B0D4FF;
+    --orange: #FFDBB0;
+}
+
+.dark {
+    color-scheme: dark;
+    --text-color: white;
+    --glass-bg: #39393999;
+    --glass-shadow: #ffffff35;
+    --glass-inset-shadow-corner: #393939b3;
+    --bg-color: linear-gradient(to top, var(--blue) 0%, black 100%);
+    --bg-el: #A9A9A9;
+    --blue: #02164e;
+    --orange: #4E3A02;
+}
