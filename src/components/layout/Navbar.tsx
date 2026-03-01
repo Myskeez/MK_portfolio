@@ -10,28 +10,28 @@ export default function Navbar() {
             <nav className='navbar'>
                 <NavLink
                     to="/"
-                    className={({ isActive }) => isActive ? "navLink active" : "navLink"}
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}
                     end>
                     Home
                 </NavLink>
                 <NavLink
                     to="/work"
-                    className={({ isActive }) => isActive ? "navLink active" : "navLink"}>
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}>
                     Work
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={({ isActive }) => isActive ? "navLink active" : "navLink"}>
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}>
                     About
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={({ isActive }) => isActive ? "navLink active" : "navLink"}>
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}>
                     Contact
                 </NavLink>
             </nav>
 
-            <div className='nacIconPlaceholder'></div>
+            <div className='navIconPlaceholder'></div>
         </header>
     )
 }
