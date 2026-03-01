@@ -1,6 +1,5 @@
 .main {
-    margin-top: calc(-4em - 1.5rem);
-    padding: calc(9em + 1.5rem) 0 4em 0;
+    padding: 4em 0;
 }
 
 .navbarContainer {
