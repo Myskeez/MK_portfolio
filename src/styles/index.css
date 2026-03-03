@@ -2,7 +2,7 @@
 @import './layout.css';
 
 html {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: Verdana, Arial, system-ui, Avenir, Helvetica, sans-serif;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -35,4 +35,15 @@ a:hover {
 h1 {
     text-align: center;
     margin: 0;
+}
+
+h2 {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    padding: .5em;
+    border-radius: calc(2.5rem + 1em);
 }

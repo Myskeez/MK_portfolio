@@ -1,6 +1,7 @@
 import '../styles/home.css'
 import GlitchText_V1 from '../components/GlitchText_V1.tsx'
 import GlitchText_V2 from '../components/GlitchText_V2.tsx'
+import GlassBox from "../components/GlassBox.tsx";
 
 export default function Home() {
     return (
@@ -11,11 +12,19 @@ export default function Home() {
             <GlitchText_V1 className='slogan s-btm' as='h1' text='Harmony in function.' />*/}
             <GlitchText_V2 className='slogan s-top' as='h1' text='Simplicity in design.' />
             <GlitchText_V2 className='slogan s-btm' as='h1' text='Harmony in function.' />
-            <p>This is my portfolio homepage.</p>
-            <p>And also my very first project with React, Vite and React Router - YAY!</p>
-            <br/>
-            <p>I'm Maksymilian Kaliszewski.</p>
-            <p>Computer Science B.Sc. student from Tübingen in Germany focusing on Frontend Development.</p>
+
+            <h2>About me</h2>
+            <GlassBox>
+                <p style={{fontWeight: 'bold', fontSize: '1.3rem'}}>Hi, I'm Maks - a passionate student that focuses on frontend development with a conviction for simple and smart design.</p>
+                <br/>
+                <p>As my studies are all about Computer Science, my spectrum of competence and skills is as wide as you would imagine. But no problem I ever encountered left such a mark as building my first website.
+                    <br/>
+                    A Website is like a mirror for the brand, people and company behind a project that always matters.
+                    <br/>
+                    And showing the world what your vision is, is as relevant as the project itself.</p>
+                <br />
+                <p>I was born in Poland, but was raised in Germany and also went on to study in Tübingen.</p>
+            </GlassBox>
         </section>
     )
 }
