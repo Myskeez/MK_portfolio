@@ -9,6 +9,7 @@
     --bg-color: linear-gradient(to top, var(--blue) 0%, white 100%);
     --bg-el: #D3D3D3;
     --blue: #B0D4FF;
+    --blue-opp: #02164e;
     --orange: #FFDBB0;
 }
 
@@ -21,5 +22,6 @@
     --bg-color: linear-gradient(to top, var(--blue) 0%, black 100%);
     --bg-el: #A9A9A9;
     --blue: #02164e;
+    --blue-opp: #B0D4FF;
     --orange: #4E3A02;
 }

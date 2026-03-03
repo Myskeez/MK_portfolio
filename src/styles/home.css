@@ -1,8 +1,105 @@
 .slogan {
-    padding-top: 2em;
-    padding-bottom: 5em;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
     line-height: 2em;
     font-family: monospace;
     font-size: 4em;
     text-transform: uppercase;
+
+    text-shadow:
+            .05em 0 0 #ff0000c9,
+            -.025em -.05em 0 #00ff00c9,
+            .025em .05em 0 #0000ffc9;
+
+    animation: glitch 1000ms infinite;
+}
+.s-top {
+    padding-top: 2em;
+    padding-bottom: 0;
+}
+.s-btm {
+    padding-top: 0;
+    padding-bottom: 5em;
+}
+
+.slogan.s-top span {
+    position: absolute;
+    top: 2em;
+    left: 0;
+}
+.slogan.s-btm span {
+    position: absolute;
+    bottom: 5em;
+    left: 0;
+}
+
+.slogan.s-top span:first-child {
+    animation: glitch 1150ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 45%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+.slogan.s-top span:last-child {
+    animation: glitch 875ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0% 100%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+.slogan.s-btm span:first-child {
+    animation: glitch 1150ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 80%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+.slogan.s-btm span:last-child {
+    animation: glitch 875ms infinite;
+    clip-path: polygon(0 5%, 100% 30%, 100% 100%, 0% 100%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow:
+                .05em 0 0 #ff0000c9,
+                -.025em -.05em 0 #00ff00c9,
+                -.025em .05em 0 #0000ffc9;
+    }
+    14% {
+        text-shadow:
+                .05em 0 0 #ff0000c9,
+                -.025em -.05em 0 #00ff00c9,
+                -.025em .05em 0 #0000ffc9;
+    }
+    15% {
+        text-shadow:
+                -.05em -.025em 0 #ff0000c9,
+                .025em .025em 0 #00ff00c9,
+                -.05em -.05em 0 #0000ffc9;
+    }
+    49% {
+        text-shadow:
+                -.05em -.025em 0 #ff0000c9,
+                .025em .025em 0 #00ff00c9,
+                -.05em -.05em 0 #0000ffc9;
+    }
+    50% {
+        text-shadow:
+                .025em .05em 0 #ff0000c9,
+                .05em 0 0 #00ff00c9,
+                0 -.025em 0 #0000ffc9;
+    }
+    99% {
+        text-shadow:
+                .025em .05em 0 #ff0000c9,
+                .05em 0 0 #00ff00c9,
+                0 -.025em 0 #0000ffc9;
+    }
+    100% {
+        text-shadow:
+                -.025em 0 0 #ff0000c9,
+                -.025em -.025em 0 #00ff00c9,
+                -.025em -.05em 0 #0000ffc9;
+    }
 }
