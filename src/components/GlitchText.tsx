@@ -6,7 +6,7 @@ type Props = {
     text: string
 }
 
-export default function GlitchText_V2({
+export default function GlitchText({
     className,
     as:Tag = 'h1',
     text
