@@ -32,14 +32,26 @@
     padding: .75em 1.5em;
     border-radius: 1.5em;
     text-decoration: none;
+    text-align: center;
     transition: all .25s ease;
+}
+.navLink::before {
+    display: block;
+    font-weight: bold;
+    visibility: hidden;
+    content: attr(data-content);
+    height: 0;
+}
+.navLink::after {
+    content: attr(data-content);
+    font-weight: normal;
 }
 
 .navLink:hover {
     transform: scale(1.05);
 }
 
-.navLink.active {
+.navLink.active::after {
     font-weight: bold;
 }
 

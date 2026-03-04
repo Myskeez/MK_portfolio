@@ -1,8 +1,105 @@
 .slogan {
-    padding-top: 2em;
-    padding-bottom: 5em;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
     line-height: 2em;
     font-family: monospace;
-    font-size: 3em;
+    font-size: 5em;
     text-transform: uppercase;
+
+    text-shadow:
+            .05em 0 0 var(--blue_main),
+            -.025em -.05em 0 var(--accent-color_1),
+            .025em .05em 0 var(--orange);
+
+    animation: glitch 2000ms infinite;
+}
+.s-top {
+    padding-top: 2em;
+    padding-bottom: 0;
+}
+.s-btm {
+    padding-top: 0;
+    padding-bottom: 8em;
+}
+
+.slogan.s-top span {
+    position: absolute;
+    top: 2em;
+    left: 0;
+}
+.slogan.s-btm span {
+    position: absolute;
+    bottom: 8em;
+    left: 0;
+}
+
+.slogan.s-top span:first-child {
+    animation: glitch 2150ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 45%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+.slogan.s-top span:last-child {
+    animation: glitch 1875ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0% 100%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+.slogan.s-btm span:first-child {
+    animation: glitch 2150ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 80%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+.slogan.s-btm span:last-child {
+    animation: glitch 1875ms infinite;
+    clip-path: polygon(0 5%, 100% 30%, 100% 100%, 0% 100%);
+    transform: translate(-.025em, -.0125em);
+    opacity: .8;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow:
+                .05em 0 0 var(--blue_main),
+                -.025em -.05em 0 var(--accent-color_1),
+                -.025em .05em 0 var(--orange);
+    }
+    14% {
+        text-shadow:
+                .05em 0 0 var(--blue_main),
+                -.025em -.05em 0 var(--accent-color_1),
+                -.025em .05em 0 var(--orange);
+    }
+    15% {
+        text-shadow:
+                -.05em -.025em 0 var(--blue_main),
+                .025em .025em 0 var(--accent-color_1),
+                -.05em -.05em 0 var(--orange);
+    }
+    49% {
+        text-shadow:
+                -.05em -.025em 0 var(--blue_main),
+                .025em .025em 0 var(--accent-color_1),
+                -.05em -.05em 0 var(--orange);
+    }
+    50% {
+        text-shadow:
+                .025em .05em 0 var(--blue_main),
+                .05em 0 0 var(--accent-color_1),
+                0 -.025em 0 var(--orange);
+    }
+    99% {
+        text-shadow:
+                .025em .05em 0 var(--blue_main),
+                .05em 0 0 var(--accent-color_1),
+                0 -.025em 0 var(--orange);
+    }
+    100% {
+        text-shadow:
+                -.025em 0 0 var(--blue_main),
+                -.025em -.025em 0 var(--accent-color_1),
+                -.025em -.05em 0 var(--orange);
+    }
 }

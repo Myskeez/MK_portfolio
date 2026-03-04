@@ -11,23 +11,23 @@ export default function Navbar() {
                 <NavLink
                     to="/"
                     className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}
+                    data-content='Home'
                     end>
-                    Home
                 </NavLink>
                 <NavLink
                     to="/work"
-                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}>
-                    Work
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}
+                    data-content='Work'>
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}>
-                    About
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}
+                    data-content='About'>
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}>
-                    Contact
+                    className={({ isActive }) => isActive ? "navLink active glass" : "navLink"}
+                    data-content='Contact'>
                 </NavLink>
             </nav>
 
