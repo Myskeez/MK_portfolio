@@ -8,10 +8,44 @@
             0 3px 24px var(--glass-shadow);
 }
 
-.simpleBox {
+.box {
     padding: 2em;
     margin: 2em auto;
     width: 50vw;
     text-align: center;
     border-radius: 2em;
+}
+.left {
+    margin: 2em 2em 2em 0;
+}
+.right {
+    margin: 2em 0 2em 2em;
+}
+
+.txtBtn {
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+    font-size: var(--text-font-size);
+    padding: .5em .7em;
+    margin: 1em;
+    border-radius: calc(var(--text-font-size) + 1em);
+    border: none;
+    transition: all .25s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.rndBtn {
+    display: block;
+    padding: .5em;
+    width: 2em;
+    height: 100%;
+    margin: 1em;
+    border-radius: 50%;
+    border: none;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+.txtBtn:hover, .rndBtn:hover {
+    transform: scale(1.05);
 }
