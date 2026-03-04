@@ -7,13 +7,15 @@ type Props = {
     children?: React.ReactNode
     kind?: kind
     style?: React.CSSProperties
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 export default function GlassButton({
     className,
     children,
     kind = "text",
-    style
+    style,
+    onClick
                                     }:Props) {
     let btn = ""
 
@@ -24,6 +26,6 @@ export default function GlassButton({
     }
 
     return (
-        <button className={`glass ${btn} ${className ?? ""}`} style={style}>{children}</button>
+        <button className={`glass ${btn} ${className ?? ""}`} style={style} onClick={onClick}>{children}</button>
     )
 }
