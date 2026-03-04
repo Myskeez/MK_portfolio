@@ -8,9 +8,9 @@
     text-transform: uppercase;
 
     text-shadow:
-            .05em 0 0 var(--blue-analoug),
-            -.025em -.05em 0 var(--orange),
-            .025em .05em 0 var(--blue-opp);
+            .05em 0 0 var(--blue_main),
+            -.025em -.05em 0 var(--accent-color_1),
+            .025em .05em 0 var(--orange);
 
     animation: glitch 2000ms infinite;
 }
@@ -62,44 +62,44 @@
 @keyframes glitch {
     0% {
         text-shadow:
-                .05em 0 0 var(--blue-analoug),
-                -.025em -.05em 0 var(--orange),
-                -.025em .05em 0 var(--blue-opp);
+                .05em 0 0 var(--blue_main),
+                -.025em -.05em 0 var(--accent-color_1),
+                -.025em .05em 0 var(--orange);
     }
     14% {
         text-shadow:
-                .05em 0 0 var(--blue-analoug),
-                -.025em -.05em 0 var(--orange),
-                -.025em .05em 0 var(--blue-opp);
+                .05em 0 0 var(--blue_main),
+                -.025em -.05em 0 var(--accent-color_1),
+                -.025em .05em 0 var(--orange);
     }
     15% {
         text-shadow:
-                -.05em -.025em 0 var(--blue-analoug),
-                .025em .025em 0 var(--orange),
-                -.05em -.05em 0 var(--blue-opp);
+                -.05em -.025em 0 var(--blue_main),
+                .025em .025em 0 var(--accent-color_1),
+                -.05em -.05em 0 var(--orange);
     }
     49% {
         text-shadow:
-                -.05em -.025em 0 var(--blue-analoug),
-                .025em .025em 0 var(--orange),
-                -.05em -.05em 0 var(--blue-opp);
+                -.05em -.025em 0 var(--blue_main),
+                .025em .025em 0 var(--accent-color_1),
+                -.05em -.05em 0 var(--orange);
     }
     50% {
         text-shadow:
-                .025em .05em 0 var(--blue-analoug),
-                .05em 0 0 var(--orange),
-                0 -.025em 0 var(--blue-opp);
+                .025em .05em 0 var(--blue_main),
+                .05em 0 0 var(--accent-color_1),
+                0 -.025em 0 var(--orange);
     }
     99% {
         text-shadow:
-                .025em .05em 0 var(--blue-analoug),
-                .05em 0 0 var(--orange),
-                0 -.025em 0 var(--blue-opp);
+                .025em .05em 0 var(--blue_main),
+                .05em 0 0 var(--accent-color_1),
+                0 -.025em 0 var(--orange);
     }
     100% {
         text-shadow:
-                -.025em 0 0 var(--blue-analoug),
-                -.025em -.025em 0 var(--orange),
-                -.025em -.05em 0 var(--blue-opp);
+                -.025em 0 0 var(--blue_main),
+                -.025em -.025em 0 var(--accent-color_1),
+                -.025em -.05em 0 var(--orange);
     }
 }
