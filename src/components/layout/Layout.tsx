@@ -8,8 +8,10 @@ export default function Layout() {
             <main className='main'>
                 <Outlet />
             </main>
-            <footer style={{ padding: "24px 0", borderTop: "1px solid var(--text-color)" }}>
-                <small>© {new Date().getFullYear()} My Portfolio</small>
+            <footer style={{ display: 'flex', flexDirection: 'column', padding: "1em 0", borderTop: "1px solid var(--text-color)" }}>
+                <span style={{ margin: "0 auto" }}>
+                    <small>© {new Date().getFullYear()} My Portfolio</small>
+                </span>
             </footer>
         </div>
     )
