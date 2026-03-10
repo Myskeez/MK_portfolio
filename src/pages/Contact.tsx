@@ -11,7 +11,7 @@ export default function Contact() {
                 <p>I am more than happy for you reaching out to me and making your vision come true.</p>
                 <p>Feel free to contact me so we can initiate your project's glow-up so it can be seen by the whole world.</p>
             </div>
-            <GlassBox kind='simple'>
+            <GlassBox kind='simple' widthness='adjusted'>
                 <div className='mailBox'>
                     <span>Email:</span>
                     <a href="mailto:max.schwarz2003@gmail.com">max.schwarz2003@gmail.com</a>

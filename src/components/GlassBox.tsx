@@ -1,14 +1,17 @@
 import * as React from "react";
 
 type kind = "simple" | "left" | "right"
+type widthness = "fixed" | "adjusted"
 
 type Props = {
     kind?: kind,
+    widthness?: widthness,
     children?: React.ReactNode
 }
 
 export default function GlassBox({
     kind = "simple",
+    widthness = "fixed",
     children
                                  }:Props) {
     let kindBox = ""
@@ -22,8 +25,13 @@ export default function GlassBox({
         kindBox = "box right"
     }
 
+    let widthnessBox = "50vw"
+    if (widthness !== "fixed") {
+        widthnessBox = "fit-content"
+    }
+
     return (
-        <div className={`glass ${kindBox}`}>
+        <div className={`glass ${kindBox}`} style={{ width: widthnessBox }}>
             {children}
         </div>
     )
