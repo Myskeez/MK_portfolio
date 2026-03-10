@@ -1,0 +1,16 @@
+.mailBox {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.mailBox span {
+    font-size: .75em;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: var(--blue_opp);
+}

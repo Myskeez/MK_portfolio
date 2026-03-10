@@ -1,7 +1,6 @@
 import '../styles/home.css'
 import GlitchText from '../components/GlitchText.tsx'
 import GlassButton from "../components/GlassButton.tsx";
-import GlassBox from "../components/GlassBox.tsx";
 import {NavLink} from "react-router-dom";
 
 export default function Home() {

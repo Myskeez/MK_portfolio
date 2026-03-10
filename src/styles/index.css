@@ -26,15 +26,21 @@ a {
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
-    transition: transform .25s;
+    font-family: monospace;
+    font-size: var(--text-font-size);
+    transition: all .25s;
 }
 a:hover {
     transform: scale(1.05);
 }
+.mailBox a:hover {
+    transform: scale(1.025);
+    color: var(--orange);
+}
 
 h1 {
     text-align: center;
-    margin: 1em 0 3em 0;
+    margin: 1em 0 1em 0;
     text-transform: uppercase;
     font-family: monospace;
     font-size: 4em;
