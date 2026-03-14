@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import {useEffect, useState} from "react"
+import Spline from '@splinetool/react-spline';
 import GlassButton from "../GlassButton"
 
 
@@ -29,8 +30,8 @@ export default function Navbar() {
 
     return (
         <header className='navbarContainer'>
-            <div className='logo'>
-                LOGO
+            <div className='logo-container'>
+                <Spline className='logo' scene="https://prod.spline.design/JDVJ1BEpJ8Ynd-GE/scene.splinecode"/>
             </div>
 
             <nav className='navbar'>
